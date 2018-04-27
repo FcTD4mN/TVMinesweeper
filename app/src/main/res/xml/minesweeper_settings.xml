@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Game settings">
+
+        <EditTextPreference
+            android:defaultValue="45"
+            android:id="@+id/uiSettingsNBMines"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Number of mines"
+            android:inputType="number"
+            android:key="resNbMines"
+            android:summary="Sets the total number of mines"/>
+        <EditTextPreference
+            android:defaultValue="13"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Number of horizontal spots"
+            android:inputType="number"
+            android:key="resGameWidth"
+            android:summary="Sets the number of spots horizontally"/>
+        <EditTextPreference
+            android:defaultValue="20"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Number of vertical spots"
+            android:inputType="number"
+            android:key="resGameHeight"
+            android:summary="Sets the number of spots vertically"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="Auto restart when lost"
+            android:key="resAutoRestart"
+            android:summary="Automatically restarts a game when you lost on a mine"/>
+    </PreferenceCategory>
+</PreferenceScreen>
